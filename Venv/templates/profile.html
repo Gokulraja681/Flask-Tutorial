@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>All Employee Details</title>
+    </head>
+<body>
+    <h1 style="text-align: center;">All User Account Datas</h1>
+    
+   <form action="/profile" method="get">
+    {% for data in details %}
+    <div>
+        <p>Username: {{ data.fname }} {{data.lname}}</p>
+        <p>User Mail - ID: {{ data.mail }}</p>
+        <p>User Password: {{ data.pswd }}</p>
+    </div>
+    <hr>
+    {% endfor %}
+   </form>
+</body>
+</html>

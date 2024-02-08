@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+    </head>
+<body>
+    <h1>This is my login page</h1>
+    <form action="/login" method="post">
+        <div>
+            <label for="mail">Mail-ID: </label>
+            <input type="mail" name="mail" id="">
+        </div>
+        <div>
+            <label for="pswd">Password: </label>
+            <input type="pswd" name="pswd" id="">
+        </div>
+        <input type="submit" name="submit" value="Login">
+        {% if msg %}
+          <p>{{msg}}</p>
+        {% endif %}
+        {% if msg1 %}
+          <p>{{msg1}}</p>
+        {% endif %}
+    </form>
+</body>
+</html>
