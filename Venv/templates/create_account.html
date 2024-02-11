@@ -28,12 +28,18 @@
                     <input type="mail" name="mail" id="" required>
                 </div>
             </li>
+            {% if msg1 %}
+              <p>{{msg1}}</p>
+            {% endif %}
             <li>
                 <div>
                     <label for="c_pass">Create Password: </label>
                     <input type="text" name="p" id="" required>
                 </div>
             </li>
+            {% if msg2 %}
+               <p>{{msg2}}</p>
+            {% endif %}
             <li>
                 <div>
                     <label for="c_pass">Confirm Password: </label>
